@@ -1,0 +1,145 @@
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f6f9;
+  color: #333;
+}
+
+/* Navigation Bar */
+.top-bar {
+  background: #111;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+}
+
+.top-bar .logo {
+  display: flex;
+  align-items: center;
+}
+
+.top-bar .logo img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.top-bar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.top-bar .nav-links a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.top-bar .nav-links a:hover,
+.top-bar .nav-links .active {
+  color: #4CAF50;
+}
+
+/* Header */
+.contact-header {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #4CAF50, #2E7D32);
+  color: white;
+}
+
+.contact-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.contact-header p {
+  font-size: 1.2rem;
+}
+
+/* Contact Section */
+.contact-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding: 50px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Contact Info */
+.contact-info {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h2 {
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  margin: 15px 0;
+  font-size: 1.1rem;
+}
+
+.contact-info i {
+  color: #4CAF50;
+  margin-right: 10px;
+}
+
+/* Contact Form */
+.contact-form {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  outline: none;
+}
+
+textarea {
+  resize: none;
+}
+
+button {
+  background: #4CAF50;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #388E3C;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-section {
+    grid-template-columns: 1fr;
+  }
+}
